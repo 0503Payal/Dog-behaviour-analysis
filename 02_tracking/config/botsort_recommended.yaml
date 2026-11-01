@@ -1,0 +1,30 @@
+# Recommended next configuration — NOT the one that produced current results.
+# That is custom_botsort.yaml. This file is the proposed next iteration.
+#
+# Two problems with the current config, both measured:
+#
+# 1. track_high_thresh: 0.5 discarded 5,409 detections below 0.5 confidence
+#    (detections fell 128,188 -> 122,014). Low confidence here means motion
+#    blur, and motion blur means a fast-moving dog — so this threshold threw
+#    away precisely the fast behaviour the project exists to measure.
+#
+# 2. with_reid: false means association is motion-only. Appearance is the one
+#    cue that survives a blur gap, and it is currently switched off.
+
+tracker_type: botsort
+
+track_high_thresh: 0.3     # was 0.5 — recover the blurred, fast-dog detections
+track_low_thresh: 0.1
+new_track_thresh: 0.4      # was 0.6 — same reason, applied to track creation
+
+track_buffer: 150          # 3.0 s at 49.95 fps. Keep: this was the main win.
+match_thresh: 0.95         # permissive; safe here, no identity swaps observed
+
+gmc_method: sparseOptFlow  # camera-motion compensation; keep
+
+with_reid: true            # was false — the biggest remaining lever
+model: auto
+proximity_thresh: 0.5
+appearance_thresh: 0.25
+
+fuse_score: true

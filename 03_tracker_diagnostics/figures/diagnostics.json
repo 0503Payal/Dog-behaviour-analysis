@@ -1,0 +1,43 @@
+{
+  "concentration": {
+    "n_track_ids": 127,
+    "ids_per_dog": 42.3,
+    "longest_track_frames": 21424,
+    "detection_share_top3_pct": 37.7,
+    "detection_share_top5_pct": 46.6,
+    "tracks_le_5f_pct": 15.7,
+    "detections_in_le_5f_pct": 0.04,
+    "tracks_le_25f_pct": 37.8,
+    "detections_in_le_25f_pct": 0.31,
+    "tracks_le_250f_pct": 62.2,
+    "detections_in_le_250f_pct": 3.41
+  },
+  "break_bias": {
+    "birth_speed_px_s": 147.0,
+    "death_speed_px_s": 212.1,
+    "mid_track_speed_px_s": 34.2,
+    "break_speed_ratio": 6.2,
+    "birth_confidence": 0.746,
+    "death_confidence": 0.72,
+    "mid_track_confidence": 0.902
+  },
+  "kinematic_validity": {
+    "gap_bridged_rows": 910,
+    "gap_bridged_pct": 0.75,
+    "median_gap_frames": 5.0,
+    "max_gap_frames": 139.0,
+    "speed_inflation_at_gaps_x": 5.0,
+    "reported_max_speed_px_s": 11603.2,
+    "corrected_max_speed_px_s": 2449.5,
+    "contiguous_jumps_over_quarter_frame": 6,
+    "max_contiguous_jump_px": 297.4
+  },
+  "coverage": {
+    "mean_ids_alive": 2.71,
+    "median_ids_alive": 3,
+    "max_ids_alive": 5,
+    "frames_at_expected_count_pct": 70.4,
+    "frames_undercounting_pct": 25.0,
+    "frames_overcounting_pct": 4.6
+  }
+}

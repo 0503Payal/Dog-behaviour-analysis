@@ -1,0 +1,25 @@
+# Source footage and annotations - belong to the biologists, not tracked
+data/
+videos/
+frames/
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.zip
+
+# Model weights - kept in the original project repository
+*.pt
+
+# Python
+__pycache__/
+*.py[cod]
+.env
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
