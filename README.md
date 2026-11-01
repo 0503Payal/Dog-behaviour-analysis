@@ -36,10 +36,10 @@ where it is not yet trustworthy.**
 
 ```
 video ──► YOLOv8 detection ──► BoT-SORT tracking ──► kinematics ──► [ behavioural states ]
-          ✅ done              ✅ done, tuned        ✅ done        🔜 next
+           done                  done, tuned          done         (next)
                                       │
-                                      ├──► tracker diagnostics ✅ done
-                                      └──► offline stitching   ✅ done
+                                      ├──► tracker diagnostics   done
+                                      └──► offline stitching     done
 ```
 
 | Stage | Status | Where |
