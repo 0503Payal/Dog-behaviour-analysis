@@ -1,7 +1,7 @@
 # Detection
 
 Group coursework: frame extraction, manual annotation, and YOLOv8 training.
-Built with **Nikolay Egorov** — original repository `negorov15/dogs-tracking`.
+Built with **Nikolay and Lina**.
 
 ## Dataset
 
